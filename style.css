@@ -2,28 +2,66 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-.user{
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 10px;
+@media(min-width:600px){
+    .user{
+        transition: .3s;
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .container{
+        display: flex;
+        gap: 20px;
+        width: 600px;
+        margin: 60px auto;
+        align-items: center;
+    }
+    .desc{
+        font-size: 14px;
+        color: gray;
+    }
+    .btn{
+        transition: .3s;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        border-radius: 12px;
+        padding: 12px 30px;
+        cursor: pointer;
+    }
 }
-.container{
-    display: flex;
-    gap: 20px;
-    width: 600px;
-    margin: 60px auto;
-    align-items: center;
-}
-.desc{
-    font-size: 14px;
-}
-.btn{
-    border: none;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    border-radius: 12px;
-    padding: 12px 30px;
-    cursor: pointer;
+@media(max-width:600px){
+    .user{
+        transition: .3s;
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .container{
+        text-align: center;
+        margin: 60px auto;
+        align-items: center;
+    }
+    .name{
+        margin-top: 0;
+        margin-bottom: 2px;
+    }
+    .desc{
+        margin-top: 0;
+        font-size: 14px;
+        color: gray;
+    }
+    .btn{
+        transition: .3s;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        border-radius: 44px;
+        padding: 12px 40px;
+        cursor: pointer;
+    }
 }
